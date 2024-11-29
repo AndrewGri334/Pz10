@@ -56,12 +56,22 @@ namespace Pz10 {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::ComboBox^ comboBox2;
+	private: System::Windows::Forms::ComboBox^ comboBox3;
+	private: System::Windows::Forms::ComboBox^ comboBox4;
+	private: System::Windows::Forms::CheckedListBox^ checkedListBox1;
+	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::LinkLabel^ linkLabel1;
+
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -88,6 +98,15 @@ namespace Pz10 {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox4 = (gcnew System::Windows::Forms::ComboBox());
+			this->checkedListBox1 = (gcnew System::Windows::Forms::CheckedListBox());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -123,7 +142,7 @@ namespace Pz10 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(1, 10);
+			this->label3->Location = System::Drawing::Point(3, 10);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(122, 16);
 			this->label3->TabIndex = 2;
@@ -158,7 +177,7 @@ namespace Pz10 {
 				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(138, 27);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(136, 33);
+			this->textBox1->Size = System::Drawing::Size(166, 33);
 			this->textBox1->TabIndex = 5;
 			// 
 			// textBox2
@@ -168,7 +187,7 @@ namespace Pz10 {
 				static_cast<System::Byte>(0)));
 			this->textBox2->Location = System::Drawing::Point(138, 86);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(136, 33);
+			this->textBox2->Size = System::Drawing::Size(166, 33);
 			this->textBox2->TabIndex = 6;
 			// 
 			// textBox3
@@ -180,7 +199,7 @@ namespace Pz10 {
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->textBox3->Size = System::Drawing::Size(161, 66);
+			this->textBox3->Size = System::Drawing::Size(191, 101);
 			this->textBox3->TabIndex = 7;
 			// 
 			// maskedTextBox1
@@ -204,7 +223,7 @@ namespace Pz10 {
 			});
 			this->comboBox1->Location = System::Drawing::Point(138, 157);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 29);
+			this->comboBox1->Size = System::Drawing::Size(151, 29);
 			this->comboBox1->TabIndex = 9;
 			// 
 			// panel1
@@ -219,9 +238,9 @@ namespace Pz10 {
 			this->panel1->Controls->Add(this->label4);
 			this->panel1->Controls->Add(this->label2);
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Location = System::Drawing::Point(42, 40);
+			this->panel1->Location = System::Drawing::Point(12, 12);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(324, 407);
+			this->panel1->Size = System::Drawing::Size(353, 410);
 			this->panel1->TabIndex = 10;
 			// 
 			// pictureBox1
@@ -298,10 +317,109 @@ namespace Pz10 {
 			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel2->Controls->Add(this->maskedTextBox1);
 			this->panel2->Controls->Add(this->label3);
-			this->panel2->Location = System::Drawing::Point(694, 519);
+			this->panel2->Location = System::Drawing::Point(694, 772);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(203, 35);
 			this->panel2->TabIndex = 16;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
+				L"1(бакалавр)", L"2(бакалавр)", L"3(бакалавр)",
+					L"4(бакалавр)", L"1(магістр)", L"2(магістр)", L"аспірантура"
+			});
+			this->comboBox2->Location = System::Drawing::Point(592, 377);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 21);
+			this->comboBox2->TabIndex = 17;
+			this->comboBox2->Text = L"Курс";
+			// 
+			// comboBox3
+			// 
+			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"СОМ", L"СОІ", L"СОФ", L"КН" });
+			this->comboBox3->Location = System::Drawing::Point(592, 414);
+			this->comboBox3->Name = L"comboBox3";
+			this->comboBox3->Size = System::Drawing::Size(121, 21);
+			this->comboBox3->TabIndex = 18;
+			this->comboBox3->Text = L"Група";
+			// 
+			// comboBox4
+			// 
+			this->comboBox4->FormattingEnabled = true;
+			this->comboBox4->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
+				L"014.01 Середня освіта (Українська мова і література)",
+					L"014.03 Середня освіта (Історія)\r014.04 Середня освіта ", L"(Математика)\r014.05 Середня освіта (Біологія та здоров’я людини)",
+					L"014.06 Середня освіта (Хімія)\r014.07 Середня освіта (Географія)", L"014.08 Середня освіта (Фізика)\r014.09 Середня освіта (Інформатика)",
+					L"014.10 Середня освіта (Трудове навчання та технології)", L"014.13 Середня освіта (Музичне мистецтво)"
+			});
+			this->comboBox4->Location = System::Drawing::Point(592, 449);
+			this->comboBox4->Name = L"comboBox4";
+			this->comboBox4->Size = System::Drawing::Size(121, 21);
+			this->comboBox4->TabIndex = 19;
+			this->comboBox4->Text = L"Спеціальність";
+			// 
+			// checkedListBox1
+			// 
+			this->checkedListBox1->FormattingEnabled = true;
+			this->checkedListBox1->Items->AddRange(gcnew cli::array< System::Object^  >(10) {
+				L"Методика викладання математики", L"Методи зображень ",
+					L"Практикум з розв\'язання задач ", L"Математичний аналіз", L"Алгебра та геометрія ", L"Методика підготовки до олімпіад з математики",
+					L"Шкільний курс математики ", L"Навчальна практика ", L"Лінійна алгебра", L"Аналітична геометрія"
+			});
+			this->checkedListBox1->Location = System::Drawing::Point(371, 355);
+			this->checkedListBox1->Name = L"checkedListBox1";
+			this->checkedListBox1->ScrollAlwaysVisible = true;
+			this->checkedListBox1->Size = System::Drawing::Size(203, 139);
+			this->checkedListBox1->TabIndex = 20;
+			// 
+			// listBox1
+			// 
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->Location = System::Drawing::Point(729, 377);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(91, 95);
+			this->listBox1->TabIndex = 21;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(527, 500);
+			this->textBox4->Multiline = true;
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(252, 139);
+			this->textBox4->TabIndex = 22;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(416, 513);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(92, 36);
+			this->button3->TabIndex = 23;
+			this->button3->Text = L"Я вивчаю";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(416, 593);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(92, 32);
+			this->button4->TabIndex = 24;
+			this->button4->Text = L"Про мене";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			// 
+			// linkLabel1
+			// 
+			this->linkLabel1->AutoSize = true;
+			this->linkLabel1->Location = System::Drawing::Point(432, 566);
+			this->linkLabel1->Name = L"linkLabel1";
+			this->linkLabel1->Size = System::Drawing::Size(50, 13);
+			this->linkLabel1->TabIndex = 25;
+			this->linkLabel1->TabStop = true;
+			this->linkLabel1->Text = L"Мій блог";
+			this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &MyForm::linkLabel1_LinkClicked_1);
 			// 
 			// MyForm
 			// 
@@ -309,7 +427,16 @@ namespace Pz10 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->ClientSize = System::Drawing::Size(896, 550);
+			this->ClientSize = System::Drawing::Size(896, 804);
+			this->Controls->Add(this->linkLabel1);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->listBox1);
+			this->Controls->Add(this->checkedListBox1);
+			this->Controls->Add(this->comboBox4);
+			this->Controls->Add(this->comboBox3);
+			this->Controls->Add(this->comboBox2);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->pictureBox1);
@@ -326,20 +453,43 @@ namespace Pz10 {
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	pictureBox1->Visible = true;
-	pictureBox2->Visible = false;
-}
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	pictureBox2->Visible = true;
-	pictureBox1->Visible = false;
-}
-};
+	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		pictureBox1->Visible = true;
+		pictureBox2->Visible = false;
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		pictureBox2->Visible = true;
+		pictureBox1->Visible = false;
+	}
+	private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
+		System::Diagnostics::Process::Start("https://drobiua2007.blogspot.com/");
+	}
+	private: System::Void linkLabel1_LinkClicked_1(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
+		System::Diagnostics::Process::Start("https://drobiua2007.blogspot.com/");
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		for (int i = 0; i < checkedListBox1->CheckedItems->Count; i++)
+		{
+			listBox1->Items->Add(checkedListBox1->CheckedItems[i]);
+		}
+	}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		textBox4->Text = "Прізвище: " + textBox1->Text + "\r\n";
+		textBox4->Text += "Ім'я: " + textBox2->Text + "\r\n";
+		textBox4->Text += "Дата народження: " + maskedTextBox1->Text + "\r\n";
+		textBox4->Text += "Адреса: " + textBox3->Text + "\r\n";
+		textBox4->Text += "Країна: " + comboBox1->Text + "\r\n";
+		textBox4->Text += "Курс: " + comboBox2->Text + "\r\n";
+		textBox4->Text += "Група: " + comboBox3->Text + "\r\n";
+		textBox4->Text += "Спеціальність: " + comboBox4->Text + "\r\n";
+	}
+	};
 }
